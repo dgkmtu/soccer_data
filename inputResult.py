@@ -70,7 +70,11 @@ def conductMain(event):
     state = registerCsv(inputData)
 
     if state == True:
-        text = '登録完了しました。'
+        text = '登録完了しました。\n'
+        textR = Hteam + ' ' + str(HtotalGoal) + '-' + str(AtotalGoal) + ' ' + Ateam + '\n'
+        text += textR
+        textS = Hshoot + '  SH  ' + Ashoot
+        text += textS
 
         messagebox.showinfo('info', text)
 
